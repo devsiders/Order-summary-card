@@ -1,0 +1,130 @@
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Pale-blue) !important;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+a{
+    color: var(--Desaturated-blue) !important;
+    font-size: 0.875rem;
+}
+
+h5{
+    font-weight: 700;
+    color: var(--Dark-blue);
+}
+
+p{
+    font-size: 0.938rem;
+    color: var(--Desaturated-blue);
+}
+
+strong{
+    color: var(--Dark-blue);
+    font-size: 1rem;
+}
+
+.card{
+    background-color: var(--Very-pale-blue) !important;
+    width: 35%;
+    border: 0 !important;
+    border-radius: 20px !important;
+}
+
+.card-img-top{
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+
+.info-text{
+    width: 80%;
+    margin-left: 30px;
+}
+
+.btn-primary2{
+    background-color: var(--Bright-blue);
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 15px;
+}
+
+.btn-cancel{
+    color: var(--Desaturated-blue);
+    background-color: transparent;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.btn-primary2:hover{
+    background-color: var(--Desaturated-blue);
+}
+
+.btn-cancel:hover{
+    color: var(--Dark-blue);
+}
+
+a:hover{
+    color: var(--Bright-blue) !important;
+    font-weight: 500 !important;
+    text-decoration: underline !important;
+}
+
+
+@media screen and (max-width: 375px) {
+    body{
+        background-image: none;
+        background-color: var(--Desaturated-blue);
+        padding: 20px 10px;
+        overflow-y: auto;
+    }
+
+    .card{
+        width: 95%;
+    }
+
+    .icon-music{
+        margin-left: -20px;
+    }
+
+    .info-plan{
+        margin-left: -20px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .card{
+        width: 85%;
+    }
+}
+
+@media  screen and (max-width: 1000px) {
+    body{
+        overflow-y: auto;
+    }
+    .card{
+        width: 70%;
+    }
+}
