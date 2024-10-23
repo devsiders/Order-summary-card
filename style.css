@@ -91,8 +91,7 @@ a:hover{
     text-decoration: underline !important;
 }
 
-
-@media screen and (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 461px) {
     body{
         background-image: none;
         background-color: var(--Desaturated-blue);
@@ -100,18 +99,48 @@ a:hover{
         overflow-y: auto;
     }
 
+
+    strong{
+        white-space: nowrap;
+    }
+
     .card{
         width: 95%;
     }
 
-    .icon-music{
-        margin-left: -20px;
+    .info-text{
+        margin-left: 15px;
     }
 
-    .info-plan{
-        margin-left: -20px;
+    .info{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .info-icon{
+        margin-right: 40px;
+    }
+
+    .icon-music{
+        max-width: 40px !important;
+        width: 120px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    #price{
+        white-space: nowrap;
+    }
+
+    .info-plan, .info-link {
+        text-align: center;
+        margin: 0 0 0 -30px;
     }
     
+    .info-link a {
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 768px) {
