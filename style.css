@@ -25,6 +25,7 @@ body{
 a{
     color: var(--Desaturated-blue) !important;
     font-size: 0.875rem;
+    transition: all 0.3s ease-out;
 }
 
 h5{
@@ -66,6 +67,7 @@ strong{
     color: white;
     font-size: 1rem;
     padding: 10px 15px;
+    transition: all 0.5s ease-out;
 }
 
 .btn-cancel{
@@ -75,6 +77,7 @@ strong{
     font-size: 1rem;
     font-weight: 500;
     padding: 10px;
+    transition: all 0.5s ease-out;
 }
 
 .btn-primary2:hover{
