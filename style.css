@@ -19,7 +19,6 @@ body{
     background-repeat: no-repeat;
     font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
-    overflow: hidden;
 }
 
 a{
@@ -45,7 +44,7 @@ strong{
 
 .card{
     background-color: var(--Very-pale-blue) !important;
-    width: 35%;
+    width: 23rem;
     border: 0 !important;
     border-radius: 20px !important;
 }
@@ -94,12 +93,14 @@ a:hover{
     text-decoration: underline !important;
 }
 
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
 @media (min-width: 320px) and (max-width: 461px) {
     body{
         background-image: none;
         background-color: var(--Desaturated-blue);
         padding: 20px 10px;
-        overflow-y: auto;
     }
 
 
